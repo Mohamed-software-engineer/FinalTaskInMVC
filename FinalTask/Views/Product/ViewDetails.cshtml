@@ -1,0 +1,17 @@
+﻿@model Product
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Product Title: @Model.Title</h5>
+        <h5 class="card-title">Category Name: @Model.Category.Name</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Product Id: @Model.ProductId</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Price: @Model.Price</h6>
+        <h6 class="card-subtitle mb-2 text-muted">Description: @Model.Description</h6>
+        <h6 class="card-subtitle mb-2 text-muted"> Quantity: @Model.Quantity</h6>
+         <h6 class="card-subtitle mb-2 text-muted"> 
+             <a href="@Model.ImagePath" class="btn btn-link my-3">Image</a>
+             </h6>
+     
+        <a href="~/Product/Index" class="btn btn-primary my-3">Back</a>
+    </div>
+</div>
